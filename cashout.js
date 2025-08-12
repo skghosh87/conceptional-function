@@ -3,8 +3,8 @@ function cashOut(money) {
     return "Invalid";
   }
   let charge = money * (1.75 / 100);
-  //   let fixedcharge = charge.toFixed(2);
-  //   let finalcharge = parseFloat(fixedcharge);
-  return charge;
+  let fixedcharge = charge.toFixed(4);
+  let finalcharge = parseFloat(fixedcharge);
+  return finalcharge;
 }
-console.log(cashOut("mewauu"));
+console.log(cashOut(999));
